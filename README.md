@@ -40,14 +40,14 @@ nslookup ${storage_account_name}.blob.core.windows.net
 ```
 Got private Ip (10.0.1.5)
 
-![op](Images/Media2.jpg)
+![op](Images/Media2.png)
 
 ```
 nslookup ${storage_account_name}.file.core.windows.net
 ```
 Got public Ip
 
-![op](Images/Media.jpg)
+![op](Images/Media.png)
 
 
 
