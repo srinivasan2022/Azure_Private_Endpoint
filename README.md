@@ -33,6 +33,22 @@ terraform apply
 - In storage account Networking section , create the private endpoint for blob storage.
 - Link the Virtual Network with Private DNS Zone.
 
+##### Open the Command prompt in Virtual Machine
+
+```
+nslookup ${storage_account_name}.blob.core.windows.net
+```
+Got private Ip (10.0.1.5)
+
+![op](Images/Media2.jpg)
+
+```
+nslookup ${storage_account_name}.file.core.windows.net
+```
+Got public Ip
+
+![op](Images/Media.jpg)
+
 
 
 
