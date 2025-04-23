@@ -1,22 +1,14 @@
-# resource "azurerm_storage_account" "storage" {
-#   name                     = var.storage_account_name
-#   resource_group_name      = var.rg_name
-#   location                 = var.location
-#   account_tier             = "Standard"
-#   account_replication_type = "LRS"
-# }
-
 resource "azurerm_storage_account" "storage" {
   name                     = var.storage_account_name
-  location                 = var.location
   resource_group_name      = var.rg_name
+  location                 = var.location
   account_tier             = "Standard"
   account_replication_type = "LRS"
-  enable_https_traffic_only = true
+
   network_rules {
     default_action             = "Deny"
-    bypass                     = ["AzureServices"]
-    virtual_network_subnet_ids = [var.subnet_id]
+    bypass                     = ["AzureServices"]  
+    //virtual_network_subnet_ids = [var.subnet_id]  # Optional: restrict to specific subnet(s) if needed
   }
 }
 
