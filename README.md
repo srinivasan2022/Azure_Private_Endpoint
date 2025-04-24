@@ -7,7 +7,7 @@ A Private Endpoint in Azure is a network interface that securely connects you to
 ## Why use Azure private endpoint :
 - Reduces exposure to threats from the public internet.
 - You don’t need to set up VPNs or ExpressRoute just to connect privately to Azure services. A private endpoint makes it simple to integrate services into your VNet.
-- 
+- Helps enforce zero trust networking principles
 
 ## Architecture Diagram :
 
@@ -53,6 +53,15 @@ nslookup ${storage_account_name}.file.core.windows.net
 Got public Ip
 
 ![op](Images/Media.png)
+
+##### Private Endpoints are supported for:
+
+- Azure Storage (Blob/File/Queue/Table)
+- Azure SQL Database
+- Key Vault
+- Cosmos DB
+- Web Apps (App Service)
+- Azure Data Factory, Synapse, etc.
 
 
 
