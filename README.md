@@ -4,6 +4,11 @@ A private endpoint is a network interface that uses a private IP address from yo
 
 A Private Endpoint in Azure is a network interface that securely connects you to Azure services over a private IP address from your Virtual Network (VNet) — essentially, it lets you access Azure services privately, without exposing them to the public internet.
 
+## Why use Azure private endpoint :
+- Reduces exposure to threats from the public internet.
+- You don’t need to set up VPNs or ExpressRoute just to connect privately to Azure services. A private endpoint makes it simple to integrate services into your VNet.
+- 
+
 ## Architecture Diagram :
 
 ![pv](Images/pv.png)
